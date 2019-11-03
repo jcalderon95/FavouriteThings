@@ -2,14 +2,52 @@
     margin: 0 auto;
     max-width: 1150px;
     margin-top: 90px;
-    background-color: red;
     padding-left: 15px;
     padding-right: 15px;
-    height: 500px;
+    
 
     .item{
-        height: 400px;
         max-width: 260px;
-        background-color: royalblue;
+        margin: 0 auto;
+
+        .itemImage{
+            display: block;
+            margin: 0 auto;
+        }
+
+        .itemName{
+            font-family: $main-font;
+            color: $main-color;
+            font-size: 25px;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        .seeMore{
+            display: block;
+            width: 170px;
+            height: 40px;
+            text-decoration: none;
+            font-size: 25px;
+            font-family: $main-font;
+            color: #4e4c4f;
+            background-color: #5ca6df;
+            text-align: center;
+            border-radius: 50px;
+            padding-top: 5px;
+            margin: 0 auto;
+            margin-top: 30px;
+            margin-bottom: 40px;
+            transition: all .2s ease-in;
+
+        &:hover{
+            background-color: #3ca0ed;
+            transform: scale(1.01);
+            -webkit-box-shadow: 6px 6px 34px -14px rgba(0,0,0,0.68);
+            -moz-box-shadow: 6px 6px 34px -14px rgba(0,0,0,0.68);
+            box-shadow: 6px 6px 34px -14px rgba(0,0,0,0.68);
+        }
+        }
     }
 }
