@@ -1,0 +1,15 @@
+.itemsContainer{
+    margin: 0 auto;
+    max-width: 1150px;
+    margin-top: 90px;
+    background-color: red;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 500px;
+
+    .item{
+        height: 400px;
+        max-width: 260px;
+        background-color: royalblue;
+    }
+}

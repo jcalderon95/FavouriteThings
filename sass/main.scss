@@ -1,0 +1,23 @@
+@import "_vars";
+@import "modules/_items";
+
+.hidden {
+    display: none;
+}
+
+html {
+  box-sizing: border-box; 
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+.title{
+    font-family: $main-font;
+    font-size: 30px;
+    color: #4e4c4f;
+    text-align: center;
+    margin-top: 60px;
+}
