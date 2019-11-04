@@ -1,0 +1,29 @@
+@import "_vars";
+@import "modules/_items";
+@import "modules/_lightbox";
+@import "modules/_footer";
+
+.hidden {
+    display: none;
+}
+
+html {
+  box-sizing: border-box; 
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+.title{
+    font-family: $main-font;
+    font-size: 50px;
+    color: #343335;
+    text-align: center;
+    margin-top: 60px;
+}
+
+body{
+  position: relative;
+}

@@ -1,0 +1,27 @@
+{
+  "name": "favouritethings",
+  "version": "1.0.0",
+  "description": "Favourite things with node and express",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcalderon95/FavouriteThings.git"
+  },
+  "author": "Jimmy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jcalderon95/FavouriteThings/issues"
+  },
+  "homepage": "https://github.com/jcalderon95/FavouriteThings#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.0.6",
+    "mysql": "^2.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}
