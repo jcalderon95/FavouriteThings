@@ -1,0 +1,80 @@
+
+.lightBox{
+    display: none;
+}
+
+.lightBoxOn{
+    display: block;
+    position: absolute;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(206, 209, 215, 0.988);
+
+    .lbClose{
+        
+        position: absolute;
+        color: #121c24;
+        right: 15%;
+        top: 5%;
+        font-size: 40px;
+        cursor: pointer;
+        font-family: $main-font;
+
+        transition: .3s ease-in;
+
+        &:hover{
+            transform: scale(1.1);
+            color: #12181d;
+        }
+
+    }
+}
+
+.lbContent{
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 110px;
+    padding: 15px;
+
+    .lbImage{
+        transition: .3s ease-in;
+
+         &:hover{
+            transform: scale(1.04);
+        }
+    }
+
+    .lbName{
+        color: $main-color;
+        font-family: $main-font;
+        font-size: 25px;
+        margin-top: 30px;
+    }
+
+    p{
+        font-family: $main-font;
+        color: #313234;
+        font-size: 18px;
+        margin-top: 20px;
+        line-height: 25px;
+        text-align: justify;
+    }
+
+    .color{
+        margin-top: 25px;
+        font-family: $main-font;
+        color: #2a4b61;
+        font-size: 20px;
+    }
+
+    .price{
+        margin-top: 20px;
+        font-family: $main-font;
+        color: #100e0e;
+        font-size: 20px;
+        font-weight: bold;
+    }
+}

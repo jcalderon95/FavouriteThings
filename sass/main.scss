@@ -1,5 +1,6 @@
 @import "_vars";
 @import "modules/_items";
+@import "modules/_lightbox";
 
 .hidden {
     display: none;
@@ -16,8 +17,12 @@ html {
 
 .title{
     font-family: $main-font;
-    font-size: 30px;
-    color: #4e4c4f;
+    font-size: 50px;
+    color: #343335;
     text-align: center;
     margin-top: 60px;
+}
+
+body{
+  position: relative;
 }

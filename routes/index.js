@@ -20,4 +20,33 @@ router.get('/', (req, res) => {
     
 })
 
+router.get('/:id', (req, res) =>{
+    console.log('hit a dynamic route!');
+    console.log(req.params.id);
+
+    let query = `SELECT * FROM tbl_items WHERE ID="${req.params.id}"`;
+
+    sql.query(query, (err, result) => {
+        if (err) { throw err; console.log(err); }
+
+        console.log(result); // should see objects wrapped in an array
+
+        // turn our social property into an array - its just text in the DB,
+        // which isnt really anything we can work with
+        // result[0].social = result[0].social.split(",").map(function(item) {
+        //     item = item.trim(); // remove the extra spaces from each word
+
+        //     return item;
+        // })
+
+        // res.render('home' , { item: result });
+
+        // console.log('after split:', result[0]);
+
+        // send the DB query back to the browser
+        res.json(result);
+    })
+    
+})
+
 module.exports = router;

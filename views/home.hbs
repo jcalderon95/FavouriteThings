@@ -1,20 +1,24 @@
 <section class="itemsContainer">
-    <div class="item">
+    
 
         {{#each item }}
-
+        <div class="item">
                 <img class="itemImage" src="images/{{ Image }}" alt="{{ Name }} Image">
                 <h3 class="itemName">{{ Name }}</h3>
 
                 <a class="seeMore" href="{{ ID }}">
                     See More 
                 </a>
-
                 
-                <p class="itemDesc">{{ Description }}</p>
-
-                <h4 class="price">{{ Price }}</h4>
-
+        </div>
         {{/each}}  
-    </div>
+    
 </section>
+
+<div class="lightBox">
+        <span class="lbClose">x</span>
+
+        <div class="lbContent">
+
+        </div>
+</div>
