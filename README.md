@@ -22,3 +22,11 @@ One page mobile first web application created using Node.js and Express. Homepag
 * Import the database inside Database folder
 * Start the application by running ``` npm start``` in the terminal window.
 * In your browser type the adress ``` http://localhost:3000```
+
+## Built with/tools
+* **HTML5**
+* **SASS/CSS3**
+* **JavaScript**
+* **Node.js**
+* **Express**
+* **Gulp**
