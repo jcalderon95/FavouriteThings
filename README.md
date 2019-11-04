@@ -2,7 +2,7 @@
 
 ## The Project
  
-One page mobile first web application created using Node.js and Express. Homepage is rendered by fetching data from a database and express dynamic routes to render it to the browser.
+One page mobile first web application created using Node.js and Express. Homepage is rendered by fetching data from a database and using express dynamic routes to render it to the browser.
 
 
 ## Prerequisites
