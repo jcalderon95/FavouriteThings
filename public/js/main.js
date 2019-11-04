@@ -14,7 +14,7 @@ const myVM = (() => {
         fetch(url) // go the the data
             .then(res => res.json()) // parse the json result into a plain object
             .then(data => {
-                console.log("my database result js: ", data)
+                console.log("my database result js: ", data);
 
                 parseUserData(data[0]);
             })
@@ -35,10 +35,12 @@ const myVM = (() => {
         `;
 
         targetDiv.innerHTML = itemContent;
-        lightBox.classList.add('lightBoxOn')
+        lightBox.classList.add('lightBoxOn');
+
+        TweenLite.from(targetDiv, 1.2, {y:50, opacity: 0, delay:0.1});
     }
     
-    button.forEach(button => button.addEventListener('click', getUserData))
+    button.forEach(button => button.addEventListener('click', getUserData));
     lightBox.querySelector('.lbClose').addEventListener('click', function(){
         lightBox.classList.remove('lightBoxOn');
     });
