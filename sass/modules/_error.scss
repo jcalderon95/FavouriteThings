@@ -1,0 +1,68 @@
+.errorBody{
+    background-color: rgba(206, 209, 215, 0.988);
+
+    .errorHome{
+        display: block;
+        width: 170px;
+        height: 40px;
+        text-decoration: none;
+        font-size: 25px;
+        font-family: $main-font;
+        color: #f0eff0;
+        background-color: #3ca0ed;
+        text-align: center;
+        border-radius: 50px;
+        padding-top: 5px;
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 40px;
+        transition: all .2s ease-in;
+
+    &:hover{
+        background-color: #3998e1;
+        transform: scale(1.01);
+        -webkit-box-shadow: 6px 6px 34px -14px rgba(0,0,0,0.68);
+        -moz-box-shadow: 6px 6px 34px -14px rgba(0,0,0,0.68);
+        box-shadow: 6px 6px 34px -14px rgba(0,0,0,0.68);
+    }
+    }
+
+    .errorCon{
+        margin: 0 auto;
+        max-width: 700px;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-top: 120px;
+
+        .errorMessage{
+            text-align: center;
+            font-family: $main-font;
+            color: $main-color;
+            font-size: 55px;
+            margin-bottom: 50px;
+        }
+
+        .errorStatus{
+            text-align: center;
+            font-family: $main-font;
+            color: rgba(206, 209, 215, 0.988);
+            font-size: 100px;
+            margin-bottom: 20px;
+            // border: solid 3px $main-color;
+            background-color: $main-color;
+            width: 300px;
+            margin: 0 auto;
+            padding-bottom: 30px;
+            padding-top: 30px;
+            // border-radius: 30px;
+        }
+
+        .error{
+            text-align: center;
+            font-family: $main-font;
+            color: $main-color;
+            font-size: 35px;
+            margin-top: 50px;
+        }
+    }
+}
