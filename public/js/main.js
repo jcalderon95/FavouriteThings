@@ -9,7 +9,7 @@ const myVM = (() => {
         // kill the default a tag behavior (dont navigate anywhere)
         event.preventDefault(); 
         // debugger;
-        let url = `/${this.getAttribute('href')}`; // /1
+        let url = `/users/${this.getAttribute('href')}`; // /1
 
         fetch(url) // go the the data
             .then(res => res.json()) // parse the json result into a plain object
